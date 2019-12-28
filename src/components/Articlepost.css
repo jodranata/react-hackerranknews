@@ -1,0 +1,42 @@
+.story {
+  display: flex;
+  line-height: 24px;
+  white-space: nowrap;
+  background: #ffffff;
+}
+
+.story > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.story > span:nth-child(1) {
+  font-weight: 600;
+  background: rgb(27, 167, 76);
+  transition: all 0.3s;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.story > span:nth-child(1) a {
+  text-decoration: none;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+  padding: 10px 0;
+}
+
+.story > span:nth-child(1):hover {
+  transform: scale(1.05, 1.05);
+  background: rgba(27, 167, 76, 0.623);
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.story > span:nth-child(1):hover a {
+  text-decoration: none;
+  color: whitesmoke;
+}
